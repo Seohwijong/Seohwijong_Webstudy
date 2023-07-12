@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="main" class="com.sist.model.MainModel"></bean>
+	<bean id="list" class="com.sist.model.ListModel"></bean>
+	<bean id="share" class="com.sist.model.ShareModel"></bean>
+	<bean id="food" class="com.sist.model.FoodModel"></bean>
+	<bean id="member" class="com.sist.model.MemberModel"></bean>
+	<bean id="board" class="com.sist.model.FreeBoardModel"/>
+	<bean id="my" class="com.sist.model.MyPageModel"/>
+	<bean id="admin" class="com.sist.model.AdminModel"/>
+</beans>

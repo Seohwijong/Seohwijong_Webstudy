@@ -1,0 +1,59 @@
+package com.sist.model;
+
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.Target;
+
+@Retention(RUNTIME)
+@Target(METHOD)
+
+/*
+ *    @ => TYPE
+ *    class class_name
+ *    {
+ *       @ => FIELD
+ *       private A a;
+ *       
+ *       @ => CONSTRUTOR
+ *       public class_name()
+ *       {
+ *           
+ *       }
+ *       @ => METHOD
+ *       public void display()
+ *       {
+ *       
+ *       }
+ *    }
+ *       @RequestMapping
+ *    	 public void display()
+ *       {
+ *       
+ *       }
+ *       @RequestMapping
+ *       public void display()
+ *       {
+ *       
+ *       }
+ *       @RequestMapping
+ *       public void display()
+ *       {
+ *       
+ *       }
+ *       @RequestMapping
+ *       public void display()
+ *       {
+ *       
+ *       }
+ *       @RequestMapping
+ *       public void display()
+ *       {
+ *       
+ *       }
+ * 
+ */
+public @interface RequestMapping {
+	public String value();
+}
