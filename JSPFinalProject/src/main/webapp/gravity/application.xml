@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+		XML : 확장된 MarkUP Lang
+		===
+		 1) 지정된 태그 , 속성이 없다 (사용자 정의)
+		 2) 시맨텍 태그 사용 (태그의 의미) = HTML은 추상태그
+		 	<a>
+		 		<b>홍길동</>
+		 		<c>25</c>
+		 	</a>
+		 	<회원>
+		 		<이름></이름>
+		 		<나이></나이>
+		 	</회원>
+		 3) 문법 => React
+		    1. 루트 태그가 한개가 존재
+ -->
+<beans>
+	<bean id="main" class="com.sist.model.MainModel"/>
+	<bean id="board" class="com.sist.model.BoardModel"/>
+	<bean id="notice" class="com.sist.model.NoticeModel"/>
+	<bean id="reserve" class="com.sist.model.ReserveModel"/>
+	<bean id="recommand" class="com.sist.model.RecommandModel"/>
+</beans>

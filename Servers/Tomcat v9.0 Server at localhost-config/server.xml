@@ -60,7 +60,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL/TLS HTTP/1.1 Connector on port 8080
     -->
-    <Connector connectionTimeout="20000" maxParameterCount="1000" port="80" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector URIEncoding="UTF-8" connectionTimeout="20000" maxParameterCount="1000" port="80" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -162,10 +162,29 @@
 
       
       
-      <Context docBase="JSPBasicProject6" path="/JSPBasicProject6" reloadable="true" source="org.eclipse.jst.jee.server:JSPBasicProject6">
+      
+      
+      
+      
+      
+      
+      
+      <Context docBase="JSPFinalProject" path="/JSPFinalProject" reloadable="true" source="org.eclipse.jst.jee.server:JSPFinalProject">
+      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxActive="10" maxIdle="8" maxWait="-1" name="jdbc/oracle" password="happy" type="javax.sql.DataSource" url="jdbc:oracle:thin:@211.238.142.113:1521:XE" username="hr"/>
+      </Context>
+      
+      
+      
+      
+      
+      
+      <Context docBase="0706Project2" path="/0706Project" reloadable="true" source="org.eclipse.jst.jee.server:0706Project2">
+      <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxActive="10" maxIdle="8" maxWait="-1" name="jdbc/oracle" password="happy" type="javax.sql.DataSource" url="jdbc:oracle:thin:@211.238.142.118:1521:XE" username="hr"/>
+      </Context>
+      <Context docBase="JSPAjaxProject3" path="/JSPAjaxProject3" reloadable="true" source="org.eclipse.jst.jee.server:JSPAjaxProject3">
       <Resource auth="Container" driverClassName="oracle.jdbc.driver.OracleDriver" maxActive="10" maxIdle="8" maxWait="-1" name="jdbc/oracle" password="happy" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1522:XE" username="hr"/>
       </Context>
-      <Context docBase="JSPMiddleProject1" path="/JSPMiddleProject1" reloadable="true" source="org.eclipse.jst.jee.server:JSPMiddleProject1"/></Host>
+      </Host>
     </Engine>
   </Service>
 </Server>
